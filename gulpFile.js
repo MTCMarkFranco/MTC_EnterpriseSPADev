@@ -9,7 +9,7 @@ gulp.task('js:minify', function () {
 });
 
 gulp.task('web:config', function () {
-  gulp.src(["./src/web.config"])
+  gulp.src(["./src/app/web.config"])
     .pipe(gulp.dest("./dist"));
 });
 
