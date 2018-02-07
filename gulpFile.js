@@ -8,7 +8,7 @@ gulp.task('js:minify', function () {
     .pipe(gulp.dest("./dist"));
 });
 
-gulp.task('web.config', function () {
+gulp.task('web:config', function () {
   gulp.src(["./src/web.config"])
     .pipe(gulp.dest("./dist"));
 });
@@ -25,4 +25,4 @@ gulp.task("html:minify", ["html:basehref"], function () {
     .pipe(gulp.dest('./dist'));
 });
 
-gulp.task("default", ["js:minify", "html:minify"]);
+gulp.task("default", ["js:minify", "html:minify", "web:config"]);
