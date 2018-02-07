@@ -8,6 +8,11 @@ gulp.task('js:minify', function () {
     .pipe(gulp.dest("./dist"));
 });
 
+gulp.task('web.config', function () {
+  gulp.src(["./src/web.config"])
+    .pipe(gulp.dest("./dist"));
+});
+
 gulp.task("html:basehref", function () {
   return gulp.src('dist/*.html')
     .pipe(replace("<base href=\"/\">", "<base href=\"/angular-simple-shopping-cart/\">"))
