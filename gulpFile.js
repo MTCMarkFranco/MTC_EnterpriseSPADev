@@ -13,13 +13,8 @@ gulp.task('web:config', function () {
     .pipe(gulp.dest("./dist"));
 });
 
-gulp.task("html:basehref", function () {
-  return gulp.src('dist/*.html')
-    .pipe(replace("<base href=\"/\">", "<base href=\"/angular-simple-shopping-cart/\">"))
-    .pipe(gulp.dest('./dist'));
-});
 
-gulp.task("html:minify", ["html:basehref"], function () {
+gulp.task("html:minify", function () {
   return gulp.src('dist/*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('./dist'));
