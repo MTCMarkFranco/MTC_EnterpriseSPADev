@@ -8,7 +8,6 @@ Based on https://jonsamwell.github.io/angular-simple-shopping-cart/
 # Overview
 
 * Cloned and modified to make the application Azure App Service friendly.
-* Note: This codebase is the end result and has specific ties to Microsoft specific AAD information.
 * Hackathon attendees will start from the public repository located here: https://jonsamwell.github.io/angular-simple-shopping-cart/
 * This codebase is the end result to work with Azure Web App Services for Windows, Linux modifications are coming...
 
@@ -24,7 +23,6 @@ Based on https://jonsamwell.github.io/angular-simple-shopping-cart/
 * Basic example of async e2e test using new (async/await) Typescript syntax.
 * Azure App Services Modifications required to host SPA type Web Apps.
 * VSTS Integration using Git
-
 
 # Setup
 
