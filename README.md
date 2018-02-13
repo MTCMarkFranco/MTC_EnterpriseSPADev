@@ -1,9 +1,12 @@
 # Angular (4) - Shopping Basket Example
 
 
-[![Build Status](https://travis-ci.org/jonsamwell/angular-simple-shopping-cart.svg?branch=master)](https://travis-ci.org/jonsamwell/angular-simple-shopping-cart)  
 
-See it in action https://jonsamwell.github.io/angular-simple-shopping-cart/
+Based on https://jonsamwell.github.io/angular-simple-shopping-cart/
+
+# Overview
+
+* Cloned and modified to make the application Azure App Service friendly.
 
 # Architectural Summary
 
