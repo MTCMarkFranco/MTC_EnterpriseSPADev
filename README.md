@@ -1,3 +1,4 @@
+
 # Angular (4) - Shopping Basket Example
 
 
@@ -21,6 +22,8 @@ Based on https://jonsamwell.github.io/angular-simple-shopping-cart/
 * SinonJS used for test mocking.
 * Minimal styling with Foundation CSS used as the base framework and SCSS used to process custom styles.
 * Basic example of async e2e test using new (async/await) Typescript syntax.
+* Azure App Services Modifications required to host SPA type Web Apps.
+* VSTS Integration using Git
 
 
 # Setup
