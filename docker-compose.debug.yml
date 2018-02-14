@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  mtc_enterprisespadev:
+    image: mtc_enterprisespadev
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 4200:4200

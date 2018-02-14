@@ -1,0 +1,8 @@
+version: '2.1'
+
+services:
+  mtc_enterprisespadev:
+    image: mtc_enterprisespadev
+    build: .
+    ports:
+      - 4200:4200

@@ -13,6 +13,10 @@ gulp.task('web:config', function () {
     .pipe(gulp.dest("./dist"));
 });
 
+gulp.task('apache:htaccess', function () {
+  gulp.src(["./src/app/.htaccess"])
+    .pipe(gulp.dest("./dist"));
+});
 
 gulp.task("html:minify", function () {
   return gulp.src('dist/*.html')
@@ -20,4 +24,4 @@ gulp.task("html:minify", function () {
     .pipe(gulp.dest('./dist'));
 });
 
-gulp.task("default", ["js:minify", "html:minify", "web:config"]);
+gulp.task("default", ["js:minify", "html:minify", "web:config", "apache:htaccess"]);
