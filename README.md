@@ -3,12 +3,13 @@
 
 
 
-Based on https://jonsamwell.github.io/angular-simple-shopping-cart/
+Based on https://github.com/jonsamwell/angular-simple-shopping-cart
 
 # Overview
 
 * Cloned and modified to make the application Azure App Service friendly.
-* Hackathon attendees will start from the public repository located here: https://jonsamwell.github.io/angular-simple-shopping-cart/
+* Hackathon attendees will start from the public repository located here:          
+* https://github.com/jonsamwell/angular-simple-shopping-cart
 * This codebase is the end result to work with Azure Web App Services for Windows, Linux via Docker Containers
 
 # Architectural Summary
