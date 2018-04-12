@@ -24,6 +24,7 @@ Based on https://github.com/jonsamwell/angular-simple-shopping-cart
 * Basic example of async e2e test using new (async/await) Typescript syntax.
 * Azure App Services Modifications required to host SPA type Web Apps.
 * VSTS Integration using Git
+* COSMOS DB-->Document DB integration with Azure Functions
 
 # Setup
 
