@@ -3,8 +3,6 @@ var replace = require('gulp-replace');
 var htmlmin = require('gulp-htmlmin');
 var log = require('fancy-log');
 
-
-
 gulp.task('js:minify', function () {
   gulp.src(["./dist/main.*.js", "./dist/polyfills.*.js", "./dist/inline.*.js"])
     .pipe(replace(/\/\*([\s\S]*?)\*\/[\s\S]?/g, ""))
@@ -36,7 +34,6 @@ gulp.task('build:versioninfo', function (){
     .pipe(replace("<span id=\"BuildVersionNumber\"></span>", "<span id=\"BuildVersionNumber\">" + versionString + "</span>"))
     .pipe(gulp.dest('./dist'));
 
-}  
-);
+});
 
-gulp.task("default", ["js:minify", "html:minify", "web:config", "apache:htaccess","build:versioninfo"]);
+gulp.task('default', ['js:minify', 'html:minify', 'web:config', 'apache:htaccess','build:versioninfo'], function (){});
