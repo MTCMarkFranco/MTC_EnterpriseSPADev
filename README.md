@@ -1,5 +1,5 @@
 
-# Angular (4) - Shopping Basket Example
+# Angular (6) - Shopping Basket Example
 
 
 
@@ -14,7 +14,7 @@ Based on https://github.com/jonsamwell/angular-simple-shopping-cart
 
 # Architectural Summary
 
-* Angular 4 application (scaffolded with angular-cli)
+* Angular 6 application (scaffolded with angular-cli)
 * Built around RxJS Observables
 * One way data flow and events based processing
 * Immutable shopping cart to increase performance by enabling the OnPush change detention strategy that drastically reduces the change subtree Angular needs to process.
