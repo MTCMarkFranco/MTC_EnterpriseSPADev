@@ -4,18 +4,18 @@ var htmlmin = require('gulp-htmlmin');
 var log = require('fancy-log');
 
 gulp.task('js:minify', function () {
-  gulp.src(["./dist/main.*.js", "./dist/polyfills.*.js", "./dist/inline.*.js"])
+  return gulp.src(["./dist/main.*.js", "./dist/polyfills.*.js", "./dist/inline.*.js"])
     .pipe(replace(/\/\*([\s\S]*?)\*\/[\s\S]?/g, ""))
     .pipe(gulp.dest("./dist"));
 });
 
 gulp.task('web:config', function () {
-  gulp.src(["./src/app/web.config"])
+  return gulp.src(["./src/app/web.config"])
     .pipe(gulp.dest("./dist"));
 });
 
 gulp.task('apache:htaccess', function () {
-  gulp.src(["./src/app/.htaccess"])
+  return gulp.src(["./src/.htaccess"])
     .pipe(gulp.dest("./dist"));
 });
 
@@ -27,7 +27,7 @@ gulp.task("html:minify", function () {
 
 gulp.task('build:versioninfo', function (){
 
-   require('dotenv').load();
+  require('dotenv').load();
   var versionString = process.env.BuildVersion;
 
   return gulp.src('dist/index.html')
@@ -36,4 +36,4 @@ gulp.task('build:versioninfo', function (){
 
 });
 
-gulp.task('default', ['js:minify', 'html:minify', 'web:config', 'apache:htaccess','build:versioninfo'], function (){});
+gulp.task('default', gulp.series('js:minify', 'html:minify', 'web:config', 'apache:htaccess','build:versioninfo'), function (){});
