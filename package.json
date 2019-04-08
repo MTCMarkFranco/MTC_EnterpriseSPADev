@@ -40,7 +40,7 @@
   "devDependencies": {
     "@angular-devkit/build-angular": "^0.13.2",
     "@angular/cli": "^6.2.4",
-    "@angular/compiler-cli": "^7.2.5",
+    "@angular/compiler-cli": "^7.2.9",
     "@types/jasmine": "^2.8.9",
     "@types/node": "^10.11.5",
     "@types/sinon": "^5.0.5",
@@ -50,7 +50,7 @@
     "gulp-replace": "^1.0.0",
     "jasmine-core": "~3.2.1",
     "jasmine-spec-reporter": "~4.2.1",
-    "karma": "^4.0.0",
+    "karma": "^4.0.1",
     "karma-chrome-launcher": "~2.2.0",
     "karma-cli": "~1.0.1",
     "karma-coverage-istanbul-reporter": "^2.0.4",
